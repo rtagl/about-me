@@ -1,9 +1,11 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import NavLink from './NavLink';
 import MenuOverlay from './MenuOverlay';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
+import Logo from '../../public/images/cloud-logo.png';
 
 const navLinks = [
 	{
@@ -24,10 +26,10 @@ const Navbar = () => {
 	const [navbarOpen, setNavbarOpen] = useState(false);
 
 	return (
-		<nav className="fixed top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
-			<div className="flex flex-wrap items-center justify-between mx-auto px-4 py-2">
-				<Link href="/" className="text-2xl md:text-5xl text-white font-semibold">
-					LOGO
+		<nav className="fixed mx-auto border border-[#33353F] top-0 left-0 right-0 z-10 bg-[#121212] bg-opacity-90">
+			<div className="flex flex-wrap container items-center justify-between mx-auto px-4">
+				<Link href="/">
+					<Image src={Logo} height={100} alt="logo" />
 				</Link>
 				<div className="mobile-menu block md:hidden">
 					{!navbarOpen ? (
