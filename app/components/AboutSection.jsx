@@ -9,10 +9,11 @@ const TAB_DATA = [
 		id: 'skills',
 		content: (
 			<ul className="list-disc pl-2">
-				<li>React</li>
-				<li>Next.js</li>
+				<li>React & Next.js</li>
 				<li>Node.js</li>
-				<li>PostgreSQL</li>
+				<li>Rest APIs</li>
+				<li>CSS Styling</li>
+				<li>Databases</li>
 			</ul>
 		),
 	},
@@ -20,7 +21,7 @@ const TAB_DATA = [
 		title: 'Education',
 		id: 'education',
 		content: (
-			<ul>
+			<ul className="list-disc pl-2">
 				<li>Boston University, Class of 2016</li>
 				<li>Ironhack, 2019</li>
 			</ul>
@@ -30,11 +31,11 @@ const TAB_DATA = [
 		title: 'Hobbies',
 		id: 'hobbies',
 		content: (
-			<ul>
+			<ul className="list-disc pl-2">
 				<li>Kite Surfing</li>
 				<li>Soccer</li>
-				<li>Alpine Hiking</li>
-				<li>PostgreSQL</li>
+				<li>Hiking</li>
+				<li>Guitar</li>
 			</ul>
 		),
 	},
@@ -56,9 +57,10 @@ const AboutSection = () => {
 				<div className="mt-4 md:mt-0 text-left flex flex-col h-full">
 					<h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
 					<p className="text-base lg:text-lg">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, praesentium fuga
-						voluptates cumque, hic aliquam sit quas in reprehenderit voluptatibus at ullam iure ex
-						excepturi dolorum aut, mollitia molestias doloribus?
+						I&apos;m eager to collaborate alongside a talented team to create innovative solutions,
+						tackle complex challenges, and deliver user-friendly experiences. The opportunity to
+						contribute to the development of cutting-edge web apps that can have a meaningful impact
+						on users is my driving motivation.
 					</p>
 					<div className="flex flex-row mt-8">
 						<TabButton selectTab={() => handleTabChange('skills')} active={tab === 'skills'}>
